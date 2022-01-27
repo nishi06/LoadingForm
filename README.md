@@ -7,12 +7,6 @@
 ## OleDBCommand()
  インスタンスを初期化します。
 
-# プロパティ
-## isNormal
-※このプロパティは廃棄予定です。
- false（規定値）：起動時にエラーメッセージを表示する。
- true：起動時にエラーメッセージを表示しない。
-
 # 使用例
 ```
 LoadingForm.FrmLoading loading = new LoadingForm.FrmLoading();

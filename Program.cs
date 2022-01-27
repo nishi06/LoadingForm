@@ -14,17 +14,11 @@ namespace LoadingForm
         [STAThread]
         static void Main()
         {
+            //LicenseForm.exeを直接起動した場合は終了する。
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //LicenseForm.exeを直接起動した場合は終了する。
-            if (LoadingForm.FrmLoading._isNormal == false)
-            {
-                MessageBox.Show("このファイルは直接起動して使用するファイルではありません。", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            Application.Run(new FrmLoading());
+            MessageBox.Show("このファイルは直接起動して使用するファイルではありません。", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }
